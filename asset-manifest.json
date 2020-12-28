@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/anagram-visualizer/static/css/main.71a29540.chunk.css",
+    "main.js": "/anagram-visualizer/static/js/main.8390c736.chunk.js",
+    "main.js.map": "/anagram-visualizer/static/js/main.8390c736.chunk.js.map",
+    "runtime-main.js": "/anagram-visualizer/static/js/runtime-main.071a0daa.js",
+    "runtime-main.js.map": "/anagram-visualizer/static/js/runtime-main.071a0daa.js.map",
+    "static/js/2.227510fb.chunk.js": "/anagram-visualizer/static/js/2.227510fb.chunk.js",
+    "static/js/2.227510fb.chunk.js.map": "/anagram-visualizer/static/js/2.227510fb.chunk.js.map",
+    "static/js/3.1a06c538.chunk.js": "/anagram-visualizer/static/js/3.1a06c538.chunk.js",
+    "static/js/3.1a06c538.chunk.js.map": "/anagram-visualizer/static/js/3.1a06c538.chunk.js.map",
+    "index.html": "/anagram-visualizer/index.html",
+    "static/css/main.71a29540.chunk.css.map": "/anagram-visualizer/static/css/main.71a29540.chunk.css.map",
+    "static/js/2.227510fb.chunk.js.LICENSE.txt": "/anagram-visualizer/static/js/2.227510fb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.071a0daa.js",
+    "static/js/2.227510fb.chunk.js",
+    "static/css/main.71a29540.chunk.css",
+    "static/js/main.8390c736.chunk.js"
+  ]
+}
