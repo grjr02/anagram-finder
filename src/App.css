@@ -1,0 +1,82 @@
+.App{
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+.header{
+  position: fixed;
+  height: 60px;
+  background: #ffffff;
+  width: 100%;
+  margin-bottom: 90px;
+  color: var(--color-one);
+  font-weight: 900;
+  display: flex;
+  place-content: center;
+  /* align-content:center;
+  justify-content:center; */
+}
+.search_container, .display_container{
+  margin-top: 40px;
+  flex: .5;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.search_container{
+  background: rgb(230, 230, 250);
+}
+.display_container{
+  background: var(--color-one);;
+  overflow-y: scroll;
+}
+.list_container{
+  flex: .7;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+}
+.word_container_item{
+  flex: 1;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+}
+@keyframes example {
+  from {
+    background-color: var(--color-one);;
+    margin-left: 100%;
+    opacity: 0;
+  }
+  to {
+    background-color: #ffffff;
+    margin-left: 5px;
+    opacity: 1;
+  }
+}
+.word_item{
+  display: flex;
+  vertical-align: middle;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(255, 255, 255, 0.3);
+  letter-spacing: 1px;
+  color: rgb(22, 22, 22);
+  animation-name: example;
+  animation-duration: 2.8s;
+  background-color: #ffffff;
+  border: 4px solid rgba(230, 230, 250, 0.780);
+  flex-direction: column;
+}
+.word_item:hover{
+  opacity: .9;
+  cursor: pointer;
+}
+.definitions{
+  padding: 5px;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: italic;
+}
