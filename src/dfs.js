@@ -23,7 +23,6 @@ function dfs(array, set4, sb, list, animations){
         sb = sb + array[i];
         sb = sb.toLowerCase();
         list.push(sb);
-        console.log("Word: " + sb);
      
         dfs(array, set4, sb, list, animations);
 

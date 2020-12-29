@@ -9,7 +9,7 @@ const Word = (props) => {
     const [arr, setArray] = useState({id:'', arr: []});
     const [currentWord, setCurrentWord] = useState('');
 
-    var { word, setWordList} = props;
+    var { word, setWordList } = props;
 
     //based on word length map out span elements
     useEffect(() => {
@@ -32,6 +32,7 @@ const Word = (props) => {
 
     const search = async () => {
         props.setDisableInput(true);
+        props.setShowFirstDefinition(false);
         const list = [];
         let animations = wordAnimations(props.word, list);
         let animationSeen = new Set();
@@ -91,8 +92,8 @@ const Word = (props) => {
 
                 if(animationSeen.has(index)) animationSeen.delete(index);
                 else{
-                setCurrentWord(a.list);
-                animationSeen.add(index)
+                    setCurrentWord(a.list);
+                    animationSeen.add(index);
                 }
 
                 if(a.v){
@@ -114,6 +115,7 @@ const Word = (props) => {
       setTimeout(() =>  { 
           setCurrentWord("") 
           props.setDisableInput(false);
+          props.setShowFirstDefinition(true);
         }, i * 150 + 150);
       
     }

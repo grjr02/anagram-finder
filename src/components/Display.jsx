@@ -3,10 +3,25 @@ import React, { useState, useEffect } from 'react'
 const Display = (props) => {
 
     const [wordList, setWordList] = useState([]);
+    const [show, setShow] = useState(false)
 
     useEffect(() => {
-        setWordList(props.wordList)
-    }, [props.wordList, wordList.display])
+        let list = props.wordList;
+        let show = props.showFirstDefinition
+
+        if(props.showFirstDefinition && list.length > 0 ){
+
+            setTimeout( () => {
+                setShow(true);
+                if(show) displayDef(0);
+                setShow(false);
+            }, 2800)
+            
+        }
+        setWordList(list)
+        
+    
+    }, [props.wordList, wordList.display, props.showFirstDefinition])
 
     const displayDef = (index) => {
 

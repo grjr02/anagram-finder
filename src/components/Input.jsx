@@ -4,7 +4,7 @@ const Input = (props) => {
 
     const [input, setInput] = useState('');
 
-    //update input in textfield
+    //Update input in textfield
     const onChangeHandler = (e) => {
       e.preventDefault();
      

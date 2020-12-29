@@ -10,20 +10,21 @@ const Search = (props) => {
     const [disableInput, setDisableInput] = useState(false)
 
     return(
-        <div className="input_and_display">
-            <div className="search_input">
-              <h4 className="label">Enter text</h4>
-              <Input setWord={setWord} setWordList={props.setWordList} 
-                disableInput={disableInput}/>
-            </div>
-            <div className="word_display">
-              <Word wordList={props.wordList} 
-                setWordList={props.setWordList} word={word}
-                setDisableInput={setDisableInput}
-              />
-            </div>
-
+      <div className="input_and_display">
+        <div className="search_input">
+          <h4 className="label">Enter text</h4>
+          <Input setWord={setWord} setWordList={props.setWordList} 
+            disableInput={disableInput}
+          />
         </div>
+        <div className="word_display">
+          <Word wordList={props.wordList} 
+            setWordList={props.setWordList} word={word}
+            setDisableInput={setDisableInput}
+            setShowFirstDefinition={props.setShowFirstDefinition}
+          />
+        </div>
+      </div>
     )
 }
 
