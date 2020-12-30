@@ -1,14 +1,19 @@
 import React, { useState } from "react"
+import '../Search-style.css';
 
 const Input = (props) => {
 
     const [input, setInput] = useState('');
+    const [ atMaxCharLength, setMaxCharLength ] = useState(false);
 
     //Update input in textfield
     const onChangeHandler = (e) => {
       e.preventDefault();
      
       let value = (e.target.value);
+
+      if(value.length <= 5) setMaxCharLength(false);
+      else setMaxCharLength(true);
 
       if(!value.charAt(value.length-1).match(/[a-z]/i) && value.length > 0) setInput(input);
       else setInput(value.substring(0,5).trim().toLowerCase());
@@ -35,6 +40,8 @@ const Input = (props) => {
                         cursor: props.disableInput ? 'default': 'pointer'
                     }}
                 />
+                <br/>
+                <label style={{display: atMaxCharLength ? "block" : "none" }} htmlFor="">Max character length is 5</label>
             </form>
         </div>
     )

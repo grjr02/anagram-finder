@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios"
 import { wordAnimations } from "../dfs";
+import '../Search-style.css';
+
 
 const { REACT_APP_KEY, REACT_APP_HOST } = process.env;
 
