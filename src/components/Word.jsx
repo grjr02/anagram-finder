@@ -85,6 +85,8 @@ const Word = (props) => {
         animationWithWord.forEach(a => {
 
           const spanObject = document.getElementsByClassName("letters-arr");
+          const curWordObj = document.getElementsByClassName("current_word_container");
+
           const index = [a.an]
 
             setTimeout(() => {
@@ -94,8 +96,14 @@ const Word = (props) => {
 
                 if(animationSeen.has(index)) animationSeen.delete(index);
                 else{
-                    setCurrentWord(a.list);
-                    animationSeen.add(index);
+
+                  curWordObj[0].style.background = a.v ? "#99edc350" : "plum";
+                  curWordObj[0].style.color = a.v ? "#ffffff" : "black";
+
+                  setCurrentWord(a.list);
+
+                  animationSeen.add(index);
+
                 }
 
                 if(a.v){
