@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/anagram-visualizer/static/css/main.c7824b41.chunk.css",
-    "main.js": "/anagram-visualizer/static/js/main.a1ff7dc0.chunk.js",
-    "main.js.map": "/anagram-visualizer/static/js/main.a1ff7dc0.chunk.js.map",
+    "main.js": "/anagram-visualizer/static/js/main.9ab3185f.chunk.js",
+    "main.js.map": "/anagram-visualizer/static/js/main.9ab3185f.chunk.js.map",
     "runtime-main.js": "/anagram-visualizer/static/js/runtime-main.071a0daa.js",
     "runtime-main.js.map": "/anagram-visualizer/static/js/runtime-main.071a0daa.js.map",
     "static/js/2.006c34af.chunk.js": "/anagram-visualizer/static/js/2.006c34af.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.071a0daa.js",
     "static/js/2.006c34af.chunk.js",
     "static/css/main.c7824b41.chunk.css",
-    "static/js/main.a1ff7dc0.chunk.js"
+    "static/js/main.9ab3185f.chunk.js"
   ]
 }
